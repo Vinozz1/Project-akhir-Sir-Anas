@@ -1,0 +1,352 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Halaman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    function setCookie(cname,cvalue,exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+     user = prompt("Please enter your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
+  }
+}
+</script>
+<body onload="checkCookie()">
+    <header>
+        <nav>
+            <a href="bi">bio</a>
+            <a href="kartuPortofolio.html">portfolio</a>
+            <a href="#">blog</a>
+        </nav>
+        <section class="hero">
+            <div class="left">
+                <div class="top">
+                    <h1>bethany jones</h1>
+                    <p>I'm a dedicated culture critic and blogger located in San Fransisco, California.</p>
+                </div>
+                <div class="bottom">
+                    <a href="#">@reallygreatsite</a>
+                    <div class="socials">
+                        <a href="#">❤️</a>
+                        <a href="#">🚩</a>
+                        <a href="#">🔔</a>
+                        <a href="#">☎️</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right"></div>
+        </section>
+    </header>
+</body>
+</html>
+
+ --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+            
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(https://wallpaperaccess.com/full/29458.jpg);
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            /* background-color: yellow; */
+            background-image: url(patrick.jpeg);
+            background-size: cover;
+        }
+
+        nav {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+            height: 80px;
+            /* background-color: salmon; */
+        }
+
+        li {
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 30px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .menu-icon {
+            display: none;
+            width: 50px;
+            height: 50px;
+        }
+
+        .menu-icon span {
+            display: block;
+            width: 40px;
+            height: 5px;
+            background-color: black;
+            margin: 8px auto;
+        }
+
+        @media screen and (max-width: 576px) {
+            ul {
+                position: absolute;
+                right: 0px;
+                top: 80px;
+                background-image: url(https://wallpapercave.com/wp/wp3183976.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: calc(100vh - 80px);
+                width: 250px;
+                display: none;
+                flex-direction: column;
+                gap: 50px;
+                padding-top: 50px;
+            }
+
+            ul.show {
+                display: flex;
+            }
+
+            ul li {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            ul li a {
+                display: block;
+                background-color: whitesmoke;
+                font-size: 24px;
+                border-bottom: 3px solid black;
+            }
+
+            ul li.h a::before {
+                content: "❤";
+            }
+
+            ul li.a a::before {
+                content: "🚩";
+            }
+
+            ul li.p a::before {
+                content: "🌍";
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkCookie()">
+    <header>
+        <nav>
+            <div class="circle"></div>
+            <ul id="menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="biografi.html">Biografi</a>
+                </li>
+                <li>
+                    <a href="kartuPortofolio.html">Portfolio</a>
+                </li>
+            </ul>
+
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="left">
+                <div class="top">
+                    <h1>Jonathan Alvino</h1>
+                    <p>Welcome to my website.
+                        ig : @Jonathanalvino14
+                    </p>
+                </div>
+                <div class="bottom">
+                    <!-- <a href="#">@Jonathanalvino14</a> -->
+                    <div class="socials">
+                        <a href="#">❤️</a>
+                        <a href="#">🚩</a>
+                        <a href="#">🔔</a>
+                        <a href="#">☎️</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right"></div>
+        </section>
+    </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector(".menu-icon").addEventListener('click', () => {
+                document.getElementById("menu").classList.toggle('show');
+                localStorage.setItem('show', !showInfo);
+            });
+
+            let showInfo;
+
+            if (!localStorage.getItem('show'))
+                localStorage.setItem('show', false);
+
+            showInfo = JSON.parse(localStorage.getItem('show'));
+
+            if (showInfo) {
+                document.getElementById("menu").classList.toggle('show');
+            }
+        });
+    </script>
+
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        // function checkCookie() {
+        //     let user = getCookie("username");
+        //     if (user != "") {
+        //         alert("Welcome again " + user);
+        //     } else {
+        //         user = prompt("Please enter your name:", "");
+        //         if (user != "" && user != null) {
+        //             setCookie("username", user, 30);
+        //         }
+        //     }
+        // }
+
+        // function checkCookie() {
+        //         let user = getCookie("username");
+        //         if (user !== "") {
+        //             document.querySelector('.hero .left .top h1').textContent = user;
+        //         } else {
+        //             user = prompt("Please enter your name:", "");
+        //             if (user !== "" && user !== null) {
+        //                 setCookie("username", user, 30);
+        //                 document.querySelector('.hero .left .top h1').textContent = user;
+        //             }
+        //         }
+        //     }
+
+
+        function setLocalStorage(key, value) {
+                localStorage.setItem(key, value);
+            }
+
+            function getLocalStorage(key) {
+                return localStorage.getItem(key) || "";
+            }
+
+        function checkLocalStorage() {
+                let user = getLocalStorage("username");
+                if (user !== "") {
+                    document.querySelector('.hero .left .top h1').textContent = user;
+                } else {
+                    user = prompt("Please enter your name:", "");
+                    if (user !== "" && user !== null) {
+                        setLocalStorage("username", user);
+                        document.querySelector('.hero .left .top h1').textContent = user;
+                    }
+                }
+            }
+
+            function checkCookie() {
+    console.log("checkCookie function called");
+    
+    let user = getCookie("username");
+    console.log("Stored username:", user);
+
+    if (user !== "") {
+        document.querySelector('.hero .left .top h1').textContent = user;
+    } else {
+        user = prompt("Please enter your name:", "");
+        console.log("User entered name:", user);
+
+        if (user !== "" && user !== null) {
+            setCookie("username", user, 30);
+            document.querySelector('.hero .left .top h1').textContent = user;
+        }
+    }
+}
+
+console.log("Script loaded");
+
+    </script>
+</body>
+<footer>
+
+</footer>
+</html>

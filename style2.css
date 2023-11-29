@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.container{
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0px auto;
+}    
+    
+section.page{
+    width: 100%;
+    min-height:100vh;
+    background-size: cover;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p, h1{
+    text-align: center;
+    padding: 5pt;
+    color: white;
+}
+
+section.page.one {
+    gap: 300pt;
+    font-size: 20pt;
+    font-family: 'bitter';
+    color: black;
+    background-image: url(https://wallpapercave.com/wp/wp3183976.jpg);
+}
+
+section.page.one > div > h1 {
+    font-size: 40pt;
+    font-family: 'dancing script';
+    color: gold;
+}
+
+div.guest {
+    font-size: 15pt;
+
+}
+
+section.page.two {
+    justify-content: space-evenly;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/68/89/118/flower-japan-flower-sakura-sakura-wallpaper-preview.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'dancing script';
+    font-size: 12pt;
+}   
+
+section.page.two > div > h1 {
+    font-size: 35pt;
+    font-family: 'dancing script';
+    color: whitesmoke;
+}
+
+section.page.two > div > h2 {
+    color: whitesmoke;
+
+}
+
+
+
+div.card {
+    padding: 15pt;
+    width: 250px;
+    height: 300pt;
+    /* background-color: rgba(255, 250, 224, 0.845); */
+    background-color: silver;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'bitter';
+}
+
+div.circle {
+width: 150pt;
+height: 150pt;
+border-radius: 50pt;
+background-image: url(https://tse1.mm.bing.net/th?id=OIP.VpGYi8MDLMVLWoq3hpKFiwHaNK&pid=Api&P=0&h=220);
+background-size: 100%, cover;
+margin-bottom: 50px;
+}
+
+
+div.line{
+    width: 150px;
+    height: 3px;
+    background-color: darkgray;
+    margin: 10px auto;
+}
+
+section.page.three {
+    justify-content: space-evenly;
+    background-image: url(https://i.pinimg.com/474x/c9/a1/d3/c9a1d3d050b579cb7b7616141444e4ef.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'dancing script';
+    font-size: 20pt;
+    color: gold;
+}   
+
+div.title {
+    text-align: center;
+    font-size: 20pt;
+    color: black;
+    font-family: 'bitter';
+}
+
+div.image {
+    border-radius: 1rem;
+    width: 400px;
+    height: 300px;
+    background-image: url(nzgzenni.png);
+    background-size: cover;
+    margin: 15px;
+    margin-bottom: 50px ;
+}
+
+div.h1 {
+    font-size: 10pt;
+    color: black;
+    font-family: 'bitter';
+}
